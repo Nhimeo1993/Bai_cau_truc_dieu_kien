@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu giá hoa quả</title>
+</head>
+<body>
+    <h2><b>Giá hoa quả</b></h2>
+    <input type="text" name="tenhoaqua" id="tenqua"/>
+    <button type="button" onclick="checkgia()">Check</button>
+    <div id="print"></div>
+    <script>
+        function checkgia(){
+            let name_qua = document.getElementById("tenqua").value;
+            switch (name_qua) {
+                case"Oi":
+                alert("Giá 20 k/kg");
+                break;
+                case"Dua hau":
+                    alert("20 K/kg");
+                break;
+                default:
+                    alert("Chịu");
+            }
+            // console.log(typeof name_qua);
+
+        }
+      
+
+    </script>
+</body>
+</html>

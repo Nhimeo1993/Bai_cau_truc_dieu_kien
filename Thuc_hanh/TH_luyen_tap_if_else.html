@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành luyện tập if-else</title>
+</head>
+<body>
+    <h2>What is the “official” name of JavaScript?</h2>
+    <input type="text" id="cau_tl" />
+    <button type="button" onclick="kiemTra()">Check</button>
+    <script>
+        function kiemTra(){
+            let cau_tra_loi = document.getElementById("cau_tl").value;
+            if (cau_tra_loi == "ECMAScript"){
+                alert("Đúng zị á!!!");
+            }
+            else {
+                alert("Mày chả biết gì cả!!!");
+            }
+        }
+    </script>
+</body>
+</html>
