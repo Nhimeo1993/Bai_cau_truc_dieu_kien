@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<body>
+    <h1>Chả hiểu kiểu gì</h1>
+    <input type="text" id="nhap" />
+    <button type="button" onclick="kiemTra()">Kiểm tra</button>
+    <div id="print"></div>
+    <script>
+        function kiemTra(){
+            let trinhDuyet = document.getElementById("nhap").value;
+            switch (trinhDuyet){
+                case "ie":
+                document.getElementById("print").innerHTML = "Giờ này vẫn dùng IE à con gà!!!";
+                break;
+                case 'Chrome':
+                case 'Firefox':
+                case 'Safari':
+                case 'Opera':
+                document.getElementById("print").innerHTML = "khá lắm bro";
+                break;
+                default: 
+                alert("Tóm lại là dùng cái gì !!!!");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

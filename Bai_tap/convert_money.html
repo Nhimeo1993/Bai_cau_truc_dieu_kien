@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+    &emsp;&emsp;&emsp;<b>Amount</b>&emsp;&emsp;&emsp;<b>From Currency</b>&emsp;&emsp;&emsp;<b>To Currency</b> <br>
+    <input type="number" name="so_tien_can_doi" id="so_tien_can_doi" />&emsp;&emsp;&emsp;
+    <select name="tiengoc" id="tiengoc">
+        <option value="1">VND</option>
+    </select>&emsp;&emsp;&emsp;&emsp;&emsp;
+    <select name="tiendoi" id="tiendoi">
+        <option value="23">USD</option>
+    </select>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <button type="button" onclick="convert()">Convert</button>
+    <div id="print"></div>
+    <script>
+        function convert(){
+            let sotien = parseFloat(document.getElementById("so_tien_can_doi").value);
+            let tien_doi = parseFloat(document.getElementById("tiengoc").value);
+            let tien_chuyen = parseFloat(document.getElementById("tiendoi").value);
+            let giatri = sotien*tien_doi*tien_chuyen;
+            document.getElementById("print").innerHTML = "Số tiền được chuyển đổi là: "+ giatri;
+        }
+    </script>
+</body>
+</html>

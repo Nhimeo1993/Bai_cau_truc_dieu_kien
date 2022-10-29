@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra đăng nhập</title>
+</head>
+<body>
+    <h2><b>Kiểm tra đăng nhập</b></h2>
+    <input type="text" id="nhapid" />
+    <button type="button" onclick="kiemTra()">Check</button>
+    <div id="hienThi"></div>
+    <script>
+        function kiemTra(){
+           let kiemtra_id = document.getElementById("nhapid").value;
+           let pass="";
+           if (kiemtra_id == "admin"){
+               let checkPass = prompt("Mời nhập mật khẩu: ");
+               if (checkPass == "củ chuối"){
+                document.getElementById("hienThi").innerHTML = "Chào bạn nhaaaaa!";
+               }
+               else (checkPass == null|| checkPass =="")
+               {
+                document.getElementById("hienThi").innerHTML ="Ơ kìa sao bạn lại thế :(";
+                           }
+            //    let matkhau = prompt("Mời nhập mật khẩu" :).value;
+           }
+           else {
+            document.getElementById("hienThi").innerHTML = "Sai rồi!!! nhập lại đi bạn";
+           }
+        }
+    </script>
+</body>
+</html>
